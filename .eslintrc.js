@@ -39,6 +39,7 @@ module.exports = {
     "comma-dangle": "off",
     "object-curly-newline": "off",
     "implicit-arrow-linebreak": "off",
+    "no-param-reassign": "off",
     "i18next/no-literal-string": [
       "error",
       {
