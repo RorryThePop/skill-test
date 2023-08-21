@@ -8,13 +8,7 @@ const MainPage = () => {
   const onChange = (val: string) => {
     setValue(val);
   };
-  return (
-    <div>
-      {t("Главная")}
-      {/* eslint-disable-next-line i18next/no-literal-string */}
-      <Input placeholder="Введите текст" value={value} onChange={onChange} />
-    </div>
-  );
+  return <div>{t("Главная")}</div>;
 };
 
 export default MainPage;

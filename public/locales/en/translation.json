@@ -9,5 +9,10 @@
   "Главная страница": "Main page",
   "Переключить": "Toggle",
   "Короткий язык": "EN",
-  "О сайте": "About"
+  "О сайте": "About",
+  "Войти": "Login",
+  "Вы ввели невеный логин или пароль": "Incorrect login or password",
+  "Форма авторизации": "Authorization form",
+  "Введите логин": "Enter login",
+  "Введите пароль": "Enter password"
 }
