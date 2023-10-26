@@ -25,6 +25,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Юрий",
+    "lastname": "Аракелов",
+    "age": 26,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://smea.uw.edu/wp-content/uploads/sites/11/2017/03/CURRENTSBLOG_Cat_2.jpg"
   }
 }
