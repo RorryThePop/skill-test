@@ -43,6 +43,7 @@ module.exports = {
     "operator-linebreak": "off",
     "react/jsx-wrap-multilines": "off",
     "jsx-props-no-spreading": "off",
+    "no-undef": "off",
     "i18next/no-literal-string": [
       "error",
       {
