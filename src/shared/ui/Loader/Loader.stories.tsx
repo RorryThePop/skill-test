@@ -1,16 +1,17 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/ThemeProvider";
-import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { Loader } from "shared/ui/Loader/Loader";
+import { Loader } from "./Loader";
 
 export default {
   title: "shared/Loader",
   component: Loader,
   argTypes: {
     backgroundColor: { control: "color" },
+  },
+  args: {
+    to: "/",
   },
 } as ComponentMeta<typeof Loader>;
 
@@ -21,5 +22,4 @@ Normal.args = {};
 
 export const Dark = Template.bind({});
 Dark.args = {};
-
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

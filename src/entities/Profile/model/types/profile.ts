@@ -11,7 +11,7 @@ export interface Profile {
   avatar: string;
 }
 
-export interface ProfileSchema {
+export interface ProfileScheme {
   data?: Profile;
   isLoading: boolean;
   error?: string;

@@ -18,13 +18,13 @@ export const Primary = Template.bind({});
 Primary.args = {
   isOpen: true,
   children:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad assumenda culpa esse, facere fuga illum impedit modi porro, quia quis rerum sapiente veniam. Deleniti facere mollitia nulla soluta veniam? Adipisci eaque laudantium necessitatibus repellat voluptatum. Animi dolor eveniet impedit laudantium, magni maxime, minus nemo quod ratione sequi, totam voluptate.",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ",
 };
 
 export const Dark = Template.bind({});
 Dark.args = {
   isOpen: true,
   children:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad assumenda culpa esse, facere fuga illum impedit modi porro, quia quis rerum sapiente veniam. Deleniti facere mollitia nulla soluta veniam? Adipisci eaque laudantium necessitatibus repellat voluptatum. Animi dolor eveniet impedit laudantium, magni maxime, minus nemo quod ratione sequi, totam voluptate.",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ",
 };
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

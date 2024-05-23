@@ -1,3 +1,3 @@
-export { Profile, ProfileSchema } from "./model/types/profile";
+export { Profile, ProfileScheme } from "./model/types/profile";
 
-export { profileActions, profileReducer } from "./model/slice/profileSlice";
+export { profileActions, profileReducer } from "./model/slice/ProfileSlice";

@@ -25,29 +25,22 @@ export function createReducerManager(
         });
         keysToRemove = [];
       }
-
       return combinedReducer(state, action);
     },
-
     add: (key: StateSchemaKey, reducer: Reducer) => {
       if (!key || reducers[key]) {
         return;
       }
-
       reducers[key] = reducer;
 
       combinedReducer = combineReducers(reducers);
     },
-
     remove: (key: StateSchemaKey) => {
       if (!key || !reducers[key]) {
         return;
       }
-
       delete reducers[key];
-
       keysToRemove.push(key);
-
       combinedReducer = combineReducers(reducers);
     },
   };

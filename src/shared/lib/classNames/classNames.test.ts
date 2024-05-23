@@ -1,11 +1,11 @@
-import { classNames } from "./classNames";
+import { classNames } from "shared/lib/classNames/classNames";
 
 describe("classNames", () => {
   test("with only first param", () => {
     expect(classNames("someClass")).toBe("someClass");
   });
 
-  test("with only additional param", () => {
+  test("with additional class", () => {
     const expected = "someClass class1 class2";
     expect(classNames("someClass", {}, ["class1", "class2"])).toBe(expected);
   });
@@ -16,7 +16,7 @@ describe("classNames", () => {
       classNames("someClass", { hovered: true, scrollable: true }, [
         "class1",
         "class2",
-      ]),
+      ])
     ).toBe(expected);
   });
 
@@ -26,7 +26,7 @@ describe("classNames", () => {
       classNames("someClass", { hovered: true, scrollable: false }, [
         "class1",
         "class2",
-      ]),
+      ])
     ).toBe(expected);
   });
 
@@ -36,7 +36,7 @@ describe("classNames", () => {
       classNames("someClass", { hovered: true, scrollable: undefined }, [
         "class1",
         "class2",
-      ]),
+      ])
     ).toBe(expected);
   });
 });

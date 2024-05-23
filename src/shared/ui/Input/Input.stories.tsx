@@ -1,6 +1,5 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Input } from "shared/ui/Input/Input";
 
 export default {
@@ -15,5 +14,6 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: "Text",
+  placeholder: "Type text",
+  value: "123123",
 };

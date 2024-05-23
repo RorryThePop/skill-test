@@ -16,42 +16,42 @@ const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  title: "Title lorem",
-  text: "Description",
+  title: "Title lorem ipsun",
+  text: "Description Description Description Description",
+};
+
+export const Error = Template.bind({});
+Error.args = {
+  title: "Title lorem ipsun",
+  text: "Description Description Description Description",
+  theme: TextTheme.ERROR,
 };
 
 export const onlyTitle = Template.bind({});
 onlyTitle.args = {
-  title: "only title",
+  title: "Title lorem ipsun",
 };
 
 export const onlyText = Template.bind({});
 onlyText.args = {
-  text: "only text",
+  text: "Description Description Description Description",
 };
 
-export const darkPrimary = Template.bind({});
-darkPrimary.args = {
-  title: "Title lorem",
-  text: "Description",
+export const PrimaryDark = Template.bind({});
+PrimaryDark.args = {
+  title: "Title lorem ipsun",
+  text: "Description Description Description Description",
 };
-darkPrimary.decorators = [ThemeDecorator(Theme.DARK)];
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const darkOnlyTitle = Template.bind({});
-darkOnlyTitle.args = {
-  title: "only title",
+export const onlyTitleDark = Template.bind({});
+onlyTitleDark.args = {
+  title: "Title lorem ipsun",
 };
-darkOnlyTitle.decorators = [ThemeDecorator(Theme.DARK)];
+onlyTitleDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const darkOnlyText = Template.bind({});
-darkOnlyText.args = {
-  text: "only text",
+export const onlyTextDark = Template.bind({});
+onlyTextDark.args = {
+  text: "Description Description Description Description",
 };
-darkOnlyText.decorators = [ThemeDecorator(Theme.DARK)];
-
-export const Error = Template.bind({});
-Error.args = {
-  title: "only title",
-  text: "Description",
-  theme: TextTheme.ERROR,
-};
+onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];

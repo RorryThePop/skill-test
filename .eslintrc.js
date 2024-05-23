@@ -41,6 +41,8 @@ module.exports = {
     "implicit-arrow-linebreak": "off",
     "no-param-reassign": "off",
     "operator-linebreak": "off",
+    "react/jsx-wrap-multilines": "off",
+    "jsx-props-no-spreading": "off",
     "i18next/no-literal-string": [
       "error",
       {
@@ -56,6 +58,7 @@ module.exports = {
   },
   globals: {
     __IS_DEV__: true,
+    __API__: true,
   },
   overrides: [
     {

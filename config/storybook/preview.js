@@ -14,8 +14,6 @@ export const parameters = {
   },
 };
 
-// @ts-ignore
 addDecorator(StyleDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
-// @ts-ignore
 addDecorator(RouterDecorator);

@@ -30,10 +30,17 @@ export const Input = memo((props: InputProps) => {
     autofocus,
     ...otherProps
   } = props;
-
   const ref = useRef<HTMLInputElement>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [caretPosition, setCaretPosition] = useState(0);
+
+  useEffect(() => {
+    if (autofocus) {
+      setIsFocused(true);
+      ref.current?.focus();
+    }
+  }, [autofocus]);
+
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
     setCaretPosition(e.target.value.length);
@@ -50,15 +57,9 @@ export const Input = memo((props: InputProps) => {
   const onSelect = (e: any) => {
     setCaretPosition(e?.target?.selectionStart || 0);
   };
-  useEffect(() => {
-    if (autofocus) {
-      setIsFocused(true);
-      ref.current.focus();
-    }
-  }, [autofocus]);
 
   return (
-    <div className={classNames(cls.InputWrapper, {}, [])}>
+    <div className={classNames(cls.InputWrapper, {}, [className])}>
       {placeholder && (
         <div className={cls.placeholder}>{`${placeholder}>`}</div>
       )}
@@ -66,8 +67,8 @@ export const Input = memo((props: InputProps) => {
         <input
           ref={ref}
           type={type}
-          onChange={onChangeHandler}
           value={value}
+          onChange={onChangeHandler}
           className={cls.input}
           onFocus={onFocus}
           onBlur={onBlur}
