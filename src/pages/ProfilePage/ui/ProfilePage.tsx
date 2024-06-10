@@ -8,17 +8,20 @@ import {
   fetchProfileData,
   getProfileData,
   getProfileError,
-  getProfileForm,
   getProfileIsLoading,
   getProfileReadonly,
+  getProfileValidateErrors,
   profileActions,
+  getProfileForm,
   ProfileCard,
   profileReducer,
+  ValidateProfileError,
 } from "entities/Profile";
 import { useCallback, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Currency } from "entities/Currency";
 import { Country } from "entities/Country";
+import { Text, TextTheme } from "shared/ui/Text/Text";
 import { ProfilePageHeader } from "./ProfilePageHeader/ProfilePageHeader";
 
 const reducers: ReducersList = {
@@ -29,15 +32,26 @@ interface ProfilePageProps {
 }
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("profile");
   const dispatch = useAppDispatch();
   const data = useSelector(getProfileData);
   const formData = useSelector(getProfileForm);
   const error = useSelector(getProfileError);
   const readonly = useSelector(getProfileReadonly);
   const isLoading = useSelector(getProfileIsLoading);
+  const validateErrors = useSelector(getProfileValidateErrors);
+
+  const validateErrorTranslates = {
+    [ValidateProfileError.SERVER_ERROR]: t("Серверная ошибка"),
+    [ValidateProfileError.INCORRECT_COUNTRY]: t("Некорректный регион"),
+    [ValidateProfileError.NO_DATA]: t("Данные не указаны"),
+    [ValidateProfileError.INCORRECT_USER_DATA]: t("Имя и фамилия обязательны"),
+    [ValidateProfileError.INCORRECT_AGE]: t("Некорректный возраст"),
+  };
   useEffect(() => {
-    dispatch(fetchProfileData());
+    if (__PROJECT__ !== "storybook") {
+      dispatch(fetchProfileData());
+    }
   }, [dispatch]);
 
   const onChangeFirstName = useCallback(
@@ -90,12 +104,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
   // доделать проверку на регулярные выражения
   const onChangeAge = useCallback(
     (value?: string) => {
-      const numberRegex = /^\d+$/; // регулярное выражение для проверки только чисел
-      if (numberRegex.test(value || "")) {
-        dispatch(profileActions.updateProfile({ age: Number(value) }));
-      } else {
-        console.warn("Please enter a valid number"); // опционально: вывод предупреждения
-      }
+      dispatch(profileActions.updateProfile({ age: Number(value) }));
     },
     [dispatch],
   );
@@ -103,6 +112,14 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
       <ProfilePageHeader />
+      {validateErrors?.length &&
+        validateErrors.map((error) => (
+          <Text
+            theme={TextTheme.ERROR}
+            text={validateErrorTranslates[error]}
+            key={error}
+          />
+        ))}
       <ProfileCard
         data={formData}
         isLoading={isLoading}
