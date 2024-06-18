@@ -48,6 +48,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     [ValidateProfileError.INCORRECT_USER_DATA]: t("Имя и фамилия обязательны"),
     [ValidateProfileError.INCORRECT_AGE]: t("Некорректный возраст"),
   };
+
   useEffect(() => {
     if (__PROJECT__ !== "storybook") {
       dispatch(fetchProfileData());
