@@ -109,13 +109,16 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1obirHf3YehKaOUsdjmZquup0-rc7pHhpTXqm7wurm43RS3KtvZNATeFEAErKF7E58WAtc7QvMtWQ2JzPvewWL1ITi7twUSoQ-SReTw"
+
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://smea.uw.edu/wp-content/uploads/sites/11/2017/03/CURRENTSBLOG_Cat_2.jpg"
     }
   ],
   "profile": {

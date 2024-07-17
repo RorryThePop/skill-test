@@ -33,3 +33,15 @@ export function useTheme(): UseThemeResult {
     toggleTheme,
   };
 }
+
+export interface IObj {
+  str: string;
+  num: number;
+  handleClick: (str: string) => void;
+}
+
+function fn(obj: IObj) {
+  return obj.handleClick("hello");
+}
+
+fn({ str: "", num: 1, handleClick() {} });
