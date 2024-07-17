@@ -5,7 +5,6 @@ import {
 } from "@reduxjs/toolkit";
 import { Comment } from "entities/Comment";
 import { StateSchema } from "app/providers/StoreProvider";
-import { fetchProfileData, Profile, updateProfileData } from "entities/Profile";
 // eslint-disable-next-line max-len
 import { fetchCommentsByArticleId } from "pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId";
 import { ArticleDetailsCommentSchema } from "../types/ArticleDetailsCommentSchema";

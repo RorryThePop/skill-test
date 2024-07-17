@@ -102,6 +102,36 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "ascacaas",
+      "id": "egKTNX_"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "sdvsdv",
+      "id": "3mW8VUO"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Hello new comment",
+      "id": "tlo_402"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Comment from user",
+      "id": "aeUrarw"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Новый комментарий",
+      "id": "oWvMOMc"
     }
   ],
   "users": [
@@ -111,7 +141,6 @@
       "password": "123",
       "role": "ADMIN",
       "avatar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1obirHf3YehKaOUsdjmZquup0-rc7pHhpTXqm7wurm43RS3KtvZNATeFEAErKF7E58WAtc7QvMtWQ2JzPvewWL1ITi7twUSoQ-SReTw"
-
     },
     {
       "id": "2",
@@ -121,14 +150,28 @@
       "avatar": "https://smea.uw.edu/wp-content/uploads/sites/11/2017/03/CURRENTSBLOG_Cat_2.jpg"
     }
   ],
-  "profile": {
-    "first": "Yury",
-    "lastname": "Arakelov",
-    "age": 26,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "São Paulo",
-    "username": "admin213",
-    "avatar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1obirHf3YehKaOUsdjmZquup0-rc7pHhpTXqm7wurm43RS3KtvZNATeFEAErKF7E58WAtc7QvMtWQ2JzPvewWL1ITi7twUSoQ-SReTw"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Yury",
+      "lastname": "Arakelov",
+      "age": 26,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin213",
+      "avatar": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1obirHf3YehKaOUsdjmZquup0-rc7pHhpTXqm7wurm43RS3KtvZNATeFEAErKF7E58WAtc7QvMtWQ2JzPvewWL1ITi7twUSoQ-SReTw"
+    },
+    {
+      "id": "2",
+      "first": "Klaus",
+      "lastname": "Arakelov",
+      "age": 14,
+      "currency": "EUR",
+      "country": "Spain",
+      "city": "Valencia",
+      "username": "admin213",
+      "avatar": "https://smea.uw.edu/wp-content/uploads/sites/11/2017/03/CURRENTSBLOG_Cat_2.jpg"
+    }
+  ]
 }
