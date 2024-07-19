@@ -132,6 +132,18 @@
       "userId": "2",
       "text": "Новый комментарий",
       "id": "oWvMOMc"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Новый коммент",
+      "id": "kO3CAWZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "New comment from admin",
+      "id": "YBFmdWn"
     }
   ],
   "users": [
