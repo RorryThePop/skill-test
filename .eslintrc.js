@@ -44,6 +44,7 @@ module.exports = {
     "react/jsx-wrap-multilines": "off",
     "jsx-props-no-spreading": "off",
     "no-undef": "off",
+    "function-paren-newline": "off",
     "i18next/no-literal-string": [
       "error",
       {
