@@ -21,7 +21,7 @@ export const Card = (props: CardProps) => {
     ...otherProps
   } = props;
   return (
-    <div className={classNames(cls.Card, {}, [])} {...otherProps}>
+    <div className={classNames(cls.Card, {}, [className])} {...otherProps}>
       {children}
     </div>
   );
