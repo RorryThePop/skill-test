@@ -68,9 +68,9 @@ export const ArticlesPageFilter = (props: ArticlePageFilterProps) => {
     (newOrder: SortOrder) => {
       dispatch(articlesPageActions.setOrder(newOrder));
       dispatch(articlesPageActions.setPage(1));
-      debouncedFetchData();
+      fetchData();
     },
-    [debouncedFetchData, dispatch],
+    [fetchData, dispatch],
   );
 
   const onChangeSearch = useCallback(
@@ -86,9 +86,9 @@ export const ArticlesPageFilter = (props: ArticlePageFilterProps) => {
     (value: ArticleType) => {
       dispatch(articlesPageActions.setType(value));
       dispatch(articlesPageActions.setPage(1));
-      debouncedFetchData();
+      fetchData();
     },
-    [debouncedFetchData, dispatch],
+    [fetchData, dispatch],
   );
 
   return (
