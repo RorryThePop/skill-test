@@ -13,7 +13,7 @@ import { ProfileScheme } from "entities/Profile";
 import { ArticleDetailsSchema } from "entities/Article";
 import { ArticleDetailsPageSchema } from "pages/ArticleDetailsPage";
 import { AddCommentFormSchema } from "features/addCommentForm";
-import { ArticlesPageSchema } from "pages/ArticlePage";
+import { ArticlesPageSchema } from "pages/ArticlesPage";
 import { UISchema } from "features/UI";
 
 export interface StateSchema {

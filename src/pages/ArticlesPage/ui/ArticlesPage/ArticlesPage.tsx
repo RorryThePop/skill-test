@@ -10,7 +10,7 @@ import { useAppDispatch } from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 import { useInitialEffect } from "shared/lib/hooks/useInitialEffect/useInitialEffect";
 import { useSelector } from "react-redux";
 import { Page } from "widgets/Page/Page";
-import { ArticlesPageFilter } from "pages/ArticlePage/ui/ArticlePageFilter/ArticlesPageFilter";
+import { ArticlesPageFilter } from "pages/ArticlesPage/ui/ArticlePageFilter/ArticlesPageFilter";
 import { useSearchParams } from "react-router-dom";
 import { fetchNextArticlesPage } from "../../model/services/fetchNextArticlesPage/fetchNextArticlesPage";
 import { initArticlesPage } from "../../model/services/initArticlesPage/initArticlesPage";

@@ -14,7 +14,6 @@ import { Input } from "shared/ui/Input/Input";
 import { Card } from "shared/ui/Card/Card";
 import { SortOrder } from "shared/types";
 import { useDebounce } from "shared/lib/hooks/useDebounce/useDebounce";
-import { Tabs, TabsItem } from "shared/ui/Tabs/Tabs";
 import { ArticleType } from "entities/Article/model/types/article";
 import { fetchArticlesList } from "../../model/services/fetchArticlesList/fetchArticlesList";
 import { articlesPageActions } from "../../model/slice/articlesPageSlice";
