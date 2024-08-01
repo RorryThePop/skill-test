@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Tabs> = (args) => <Tabs {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
-  children: "Text",
+  // children: "Text",
 };

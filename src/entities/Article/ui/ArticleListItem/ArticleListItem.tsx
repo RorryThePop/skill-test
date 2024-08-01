@@ -9,7 +9,7 @@ import { Button, ButtonTheme } from "shared/ui/Button/Button";
 import { useNavigate } from "react-router-dom";
 import { RoutePath } from "shared/config/routeConfig/routeConfig";
 import { AppLink } from "shared/ui/AppLink/AppLink";
-import { HTMLAttributeAnchorTarget } from "react";
+import { HTMLAttributeAnchorTarget, memo } from "react";
 import {
   Article,
   ArticleBlockType,
@@ -23,10 +23,10 @@ interface ArticleListItemProps {
   className?: string;
   article: Article;
   target?: HTMLAttributeAnchorTarget;
-  view?: ArticleView;
+  view: ArticleView;
 }
 
-export const ArticleListItem = (props: ArticleListItemProps) => {
+export const ArticleListItem = memo((props: ArticleListItemProps) => {
   const { className, article, view, target } = props;
   const { t } = useTranslation();
 
@@ -93,4 +93,4 @@ export const ArticleListItem = (props: ArticleListItemProps) => {
       </Card>
     </AppLink>
   );
-};
+});

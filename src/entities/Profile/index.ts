@@ -10,7 +10,7 @@ export { fetchProfileData } from "./model/services/fetchProfileData/fetchProfile
 export { updateProfileData } from "./model/services/updateProfileData/updateProfileData";
 
 export { ProfileCard } from "./ui/ProfileCard/ProfileCard";
-export { getProfileForm } from "./model/selectors/GetProfileForm/getProfileForm";
+export { getProfileForm } from "entities/Profile/model/selectors/getProfileForm/getProfileForm";
 export { getProfileData } from "./model/selectors/getProfileData/getProfileData";
 export { getProfileIsLoading } from "./model/selectors/getProfileIsLoading/getProfileIsLoading";
 export { getProfileError } from "./model/selectors/getProfileError/getProfileError";

@@ -17,5 +17,5 @@ const Template: ComponentStory<typeof AddCommentForm> = (args) => (
 
 export const Normal = Template.bind({});
 Normal.args = {
-  children: "Text",
+  // children: "Text",
 };

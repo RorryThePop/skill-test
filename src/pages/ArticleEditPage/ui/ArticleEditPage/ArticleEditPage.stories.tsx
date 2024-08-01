@@ -16,5 +16,5 @@ const Template: ComponentStory<typeof ArticleEditPage> = (args) => (
 
 export const Normal = Template.bind({});
 Normal.args = {
-  children: "Text",
+  // children: "Text",
 };

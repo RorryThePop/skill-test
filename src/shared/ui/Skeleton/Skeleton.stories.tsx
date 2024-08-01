@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof Skeleton> = (args) => (
 
 export const Normal = Template.bind({});
 Normal.args = {
-  children: "Text",
+  // children: "Text",
   width: "100%",
   height: 200,
 };
