@@ -1,0 +1,14 @@
+.Tabs {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.normal {
+  background: var(--card-bg);
+}
+
+.outlined {
+  border: 1px solid var(--primary-color)
+}
+
